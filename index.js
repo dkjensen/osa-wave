@@ -6,11 +6,11 @@ waves.forEach(function (wave) {
   var fillColor = wave.getAttribute('data-fill') || '#f0f';
   var clipDirection = wave.getAttribute('data-clip-direction') || 'top';
   var containerWrapper = document.createElement('div');
-  containerWrapper.classList = 'containerWrapper';
+  containerWrapper.classList = 'wave-container-wrapper';
   var container = document.createElement('div');
-  container.classList = 'container';
+  container.classList = 'wave-container';
   var canvas = document.createElement('canvas');
-  canvas.classList = 'canvas';
+  canvas.classList = 'wave-canvas';
   container.appendChild(canvas);
   containerWrapper.appendChild(container);
   wave.insertAdjacentElement('afterend', containerWrapper);
